@@ -1,7 +1,7 @@
 {
   "name": "tricom-stylelint-config-smacss",
   "version": "1.0.0",
-  "description": "",
+  "description": "TriCom's custom property and sass stylelint-order configuration.",
   "main": "index.js",
   "scripts": {
     "eslint": "eslint .",
@@ -10,10 +10,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TricomB2B/tricom-stylelint-config-smacss.git"
+    "url": "https://github.com/TricomB2B/tricom-stylelint-config-smacss.git"
   },
+  "bugs": {
+    "url": "https://github.com/TricomB2B/tricom-stylelint-config-smacss/issues"
+  },
+  "homepage": "https://github.com/TricomB2B/tricom-stylelint-config-smacss",
   "keywords": [],
-  "author": "Todd Miller <github.com/Toddses>",
+  "author": "Todd Miller <todd.miller@tricomb2b.com> (https://tricomb2b.com)",
   "license": "MIT",
   "dependencies": {
     "stylelint-order": "^3.0.0"

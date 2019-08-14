@@ -1,15 +1,11 @@
-# stylelint-config-property-sort-order-smacss
+# tricom-stylelint-config-smacss
 
-[![NPM version](https://img.shields.io/npm/v/stylelint-config-property-sort-order-smacss.svg)](https://www.npmjs.org/package/stylelint-config-property-sort-order-smacss)
-[![NPM Downloads](https://img.shields.io/npm/dm/stylelint-config-property-sort-order-smacss.svg)](https://www.npmjs.org/package/stylelint-config-property-sort-order-smacss)
-[![Build Status](https://travis-ci.org/cahamilton/stylelint-config-property-sort-order-smacss.svg?branch=master)](https://travis-ci.org/cahamilton/stylelint-config-property-sort-order-smacss)
-
-Stylelint config for Property Sort Ordering based on the [SMACSS](http://smacss.com) methodology.
+Stylelint config for Property Sort Ordering based on TriCom's [SMACSS](http://smacss.com) methodology. Also includes support for sass at-rule sort ordering.
 
 ## Installation
 
 ```bash
-npm install --save-dev stylelint-config-property-sort-order-smacss
+yarn add tricom-stylelint-config-smacss
 `````
 
 ## Usage
@@ -18,7 +14,7 @@ To start using this configuration, simply extend this package in your Stylelint 
 
 ```js
 {
-  "extends": "stylelint-config-property-sort-order-smacss",
+  "extends": "tricom-stylelint-config-smacss",
   "rules": {
     // Add additional rules here
   }
@@ -29,4 +25,9 @@ For more information on configuring Stylelint, check out the [configuration](htt
 
 ## Property Ordering
 
-Refer to [here](https://github.com/cahamilton/css-property-sort-order-smacss/blob/v2.1.1/index.js) for the comprehensive list of property orders. 
+Look at order.js. Bingo bango bongo.
+
+## Thanks
+
+Work here largely based on [stylelint-config-property-sort-order-smacss
+](https://github.com/cahamilton/stylelint-config-property-sort-order-smacss).
