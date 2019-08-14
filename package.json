@@ -1,0 +1,30 @@
+{
+  "name": "tricom-stylelint-config-smacss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "eslint .",
+    "tape": "tape 'tests/index.js'",
+    "test": "npm run eslint && npm run tape"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TricomB2B/tricom-stylelint-config-smacss.git"
+  },
+  "keywords": [],
+  "author": "Todd Miller <github.com/Toddses>",
+  "license": "MIT",
+  "dependencies": {
+    "stylelint-order": "^3.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-config-stylelint": "^11.0.0",
+    "stylelint": "^10.0.0",
+    "tape": "^4.10.1"
+  },
+  "peerDependencies": {
+    "stylelint": "^10.0.0"
+  }
+}
