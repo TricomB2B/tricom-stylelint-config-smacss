@@ -25,10 +25,8 @@
   "devDependencies": {
     "eslint": "^5.16.0",
     "eslint-config-stylelint": "^11.0.0",
-    "stylelint": "^10.0.0",
+    "stylelint": "^13.2.0",
     "tape": "^4.10.1"
   },
-  "peerDependencies": {
-    "stylelint": "^10.0.0"
-  }
+  "peerDependencies": {}
 }
