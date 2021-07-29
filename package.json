@@ -1,6 +1,6 @@
 {
   "name": "tricom-stylelint-config-smacss",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "TriCom's custom property and sass stylelint-order configuration.",
   "main": "index.js",
   "scripts": {
