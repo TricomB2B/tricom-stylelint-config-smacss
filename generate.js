@@ -1,15 +1,26 @@
-"use strict"
+/** @format */
 
-module.exports = function (order) {
-  let config = []
+'use strict';
 
-  for (const property in order) {
-    if (order.hasOwnProperty(property)) {
-      for (let i = 0; i < order[property].length; i++) {
-        config = config.concat(order[property][i])
-      }
+const order = require('./order');
+
+/**
+ * Returns an array of group objects for `stylelint-order` config
+ * @param {Object} options - Optional group properties
+ * @return {Array}
+ */
+module.exports = (options = {}) => {
+  return Object.keys(order).reduce((config, key) => {
+    const groupName = key;
+    const groupCurrent = order[key];
+    const hasNestedGroups = groupCurrent.every((item) => Array.isArray(item));
+
+    let properties = groupCurrent;
+
+    if (hasNestedGroups) {
+      properties = groupCurrent.reduce((arr, item) => [...arr, ...item], []);
     }
-  }
 
-  return config
-}
+    return [...config, { ...options, groupName, properties }];
+  }, []);
+};

@@ -1,36 +1,34 @@
-"use strict"
+/** @format */
 
-const order = require("./order")
+'use strict';
 
-const generate = require("./generate")
+const generate = require('./generate');
 
-const config = generate(order)
+const options = generate();
 
 module.exports = {
-  "plugins": [
-    "stylelint-order",
-  ],
-  "rules": {
-    "order/order": [
-      "custom-properties",
-      "dollar-variables",
+  plugins: ['stylelint-order'],
+  rules: {
+    'order/order': [
+      'custom-properties',
+      'dollar-variables',
       {
-        "type": "at-rule",
-        "name": "extend"
+        type: 'at-rule',
+        name: 'extend',
       },
       {
-        "type": "at-rule",
-        "name": "include",
-        "hasBlock": false
+        type: 'at-rule',
+        name: 'include',
+        hasBlock: false,
       },
-      "declarations",
+      'declarations',
       {
-        "type": "at-rule",
-        "name": "include",
-        "hasBlock": true
+        type: 'at-rule',
+        name: 'include',
+        hasBlock: true,
       },
-      "rules"
+      'rules',
     ],
-    "order/properties-order": config,
+    'order/properties-order': [options],
   },
-}
+};
